@@ -6,7 +6,7 @@ import pandas as pd
 import os
 
 # Dashboard Titel
-st.title("🌤️ Wetter Dashboard")
+st.title("Wetter Dashboard")
 
 # CSV Datei laden
 # Erstmal prüfen ob die Datei existiert
@@ -40,7 +40,7 @@ avg_temp_24h = last_24_hours['Temperatur'].mean()
 st.metric("Durchschnittstemperatur (letzte 24h)", f"{avg_temp_24h:.1f}°C")
 
 # Temperaturverlauf als Liniendiagramm
-st.subheader("📈 Temperaturverlauf")
+st.subheader("Temperaturverlauf")
 
 # Daten für das Diagramm vorbereiten
 chart_data = city_data.set_index('Zeitpunkt')['Temperatur']
